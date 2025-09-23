@@ -183,6 +183,7 @@ function restore() {
         case "$yn" in
             [Yy])
                 1panel -l $LANGUAGE restore
+                read -t 0.1 _ || true
                 break
                 ;;
             [Nn])
